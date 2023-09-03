@@ -54,10 +54,10 @@
             ContentTemplate="{DataTemplate local:AboutPage}"/>
 
         <ShellContent Title="About 2" Icon="moon.png"
-            ContentTemplate="{DataTemplate local:AboutPage}"/>
+            ContentTemplate="{DataTemplate local:SunrisePage}"/>
 
         <ShellContent Title="About 3" Icon="moon.png"
-            ContentTemplate="{DataTemplate local:AboutPage}"/>
+            ContentTemplate="{DataTemplate local:NewPage1}"/>
     </FlyoutItem>
 
 
