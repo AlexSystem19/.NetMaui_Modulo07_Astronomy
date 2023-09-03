@@ -6,7 +6,7 @@
     xmlns:local="clr-namespace:Astronomy.Pages"
     FlyoutIcon="moon.png">
 
-    <Shell.FlyoutHeader>
+    <!--<Shell.FlyoutHeader>
         <Grid HeightRequest="100" BackgroundColor="Yellow">
             <Image Source="moon.png" />
         </Grid>
@@ -40,6 +40,24 @@
     <FlyoutItem Title="About" Icon="question.png">
         <ShellContent
         ContentTemplate="{DataTemplate local:AboutPage}"/>
+    </FlyoutItem>-->
+    <FlyoutItem Title="Astronomy" Icon="moon.png">
+        <ShellContent Title="Moon Phase" Icon="moon.png"
+            ContentTemplate="{DataTemplate local:MoonPhasePage}"/>
+
+        <ShellContent Title="Sunrise" Icon="sun.png"
+            ContentTemplate="{DataTemplate local:SunrisePage}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="About" Icon="question.png">
+        <ShellContent Title="About 1" Icon="moon.png"
+            ContentTemplate="{DataTemplate local:AboutPage}"/>
+
+        <ShellContent Title="About 2" Icon="moon.png"
+            ContentTemplate="{DataTemplate local:AboutPage}"/>
+
+        <ShellContent Title="About 3" Icon="moon.png"
+            ContentTemplate="{DataTemplate local:AboutPage}"/>
     </FlyoutItem>
 
 
