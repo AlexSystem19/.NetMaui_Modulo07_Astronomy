@@ -50,8 +50,16 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\moon.png" />
+	  <None Remove="Resources\Images\pregunta.png" />
 	  <None Remove="Resources\Images\question.png" />
+	  <None Remove="Resources\Images\respuesta.png" />
 	  <None Remove="Resources\Images\sun.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Pages\Detalle.xaml.cs">
+	    <DependentUpon>Detalle.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -59,6 +67,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\MoonPhasePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\Detalle.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\SunrisePage.xaml">
